@@ -10,9 +10,7 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    App a_test_object = new App();
     @Test
     public void shouldAnswerWithTrue()
     {
@@ -21,7 +19,12 @@ public class AppTest
 
     @Test
     public void shouldReturnTrue(){
+
+        assertEquals(a_test_object.basicSum(5,5) ,10);
+    }
+    @Test
+    public void shouldGoDown(){
         App a = new App();
-        assertEquals(a.basicSum(5,5) ,10);
+        assertEquals(a_test_object.basicSum(5,1) ,12);
     }
 }
