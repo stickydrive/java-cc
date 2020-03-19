@@ -24,8 +24,8 @@ jobs: # a collection of steps
           path: ~/test-results
       - store_artifacts:
           path: ~/test-results/junit
-  workflows:
-     version: 2
-      workflow:
+workflows:
+  version: 2
+  workflow:
     jobs:
       - build
