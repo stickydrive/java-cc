@@ -25,6 +25,6 @@ public class AppTest
     @Test
     public void shouldGoDown(){
         App a = new App();
-        assertEquals(a_test_object.basicSum(5,1) ,12);
+        assertEquals(a_test_object.basicSum(5,1) ,6);
     }
 }
